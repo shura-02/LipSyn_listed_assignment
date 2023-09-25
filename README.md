@@ -13,4 +13,8 @@ AI model for Lip Synced video with the help of the video and audio as inputs.
 3. Upload your input files.
 4. Run the inference code.
 5. Play the result video.
-6. 
+6. Choose to download the result by running the next cell or delete the results by skipping the download and running the next cell.
+7. Try out different variations such as :
+   i) Introducing a resize_factor: It educes the resolution of the video as lower resolution yeilds a better output.
+   ii) More Padding: To include the chin region (You can manually edit pads dimensions viewing and changing the code)
+   iii) Scaling the results to 50%
