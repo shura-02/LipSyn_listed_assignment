@@ -21,3 +21,26 @@ Variations
 
 1. Resize_factor : A slight improvement can be seen.
 2. Padding : Small degree of improvement can be noticed when playing around with the padding parameters.
+
+Evaluation:
+
+The evaluation wasn't working and figured out a solution from the issue section.
+!pip install scenedetect==0.6.2
+!pip install audio
+!pip install face_detection
+!pip install models
+
+Updated these to the requirements.txt file
+
+Evaluation was unsuccessful due to package error.
+
+Updated the conv.py file
+from Wav2Lip.models.conv import Conv2dTranspose, Conv2d, nonorm_Conv2d
+
+Updated the gen_videos_from_filelist.py file
+from Wav2Lip.temp import audio
+import face_detection
+from models import Wav2Lip
+
+Still couldn't resolve the issue.
+Apparently there is no solution yet on the Issues as well.
