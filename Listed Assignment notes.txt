@@ -1,0 +1,23 @@
+Listed Assignment notes
+--------------------------
+Lip sync
+
+
+At 00:09:02 of the video a slide is shown, where the speaker's face cannot be seen.
+In order for the inference to work, face must be detected in all the frames.
+ValueError: Face not detected! Ensure the video contains a face in all the frames.
+
+Hence, editing the video and trimming it till 00:09:1, so that it satisfies the requirements.
+
+Same goes with the audio. It's been trimmed to 00:09:1
+
+The model is trained on low quality video and hence works best on low quality videos. Which means that the video needed to be compressed and cropped.
+Video quality is at 480p now.
+
+
+Number of frames available for inference: 228
+
+Variations
+
+1. Resize_factor : A slight improvement can be seen.
+2. Padding : Small degree of improvement can be noticed when playing around with the padding parameters.
